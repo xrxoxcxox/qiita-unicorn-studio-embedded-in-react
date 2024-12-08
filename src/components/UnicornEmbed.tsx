@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { useUnicornStudio } from "../hooks/useUnicornStudio";
 
 interface UnicornEmbedProps {
   projectId: string;
@@ -7,7 +6,6 @@ interface UnicornEmbedProps {
 
 export const UnicornEmbed: React.FC<UnicornEmbedProps> = ({ projectId }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  useUnicornStudio();
 
   return (
     <div
